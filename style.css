@@ -476,6 +476,7 @@ button:focus {
 
 .about-content p {
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .about-content h5 {
