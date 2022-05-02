@@ -1,181 +1,707 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Modified by Amardeep Sarang
--->
-<html>
-	<head>
-		<title>Amardeep Sarang</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title>Amardeep Sarang</title>
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/profilepic.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Amardeep Sarang</strong>.</h1>
-							</header>
-							<p>I'm motivated and hardworking 4th year student pursuing a BSc computer science degree at Wilfrid Laurier university. My interests include AI, data science, and consumer technology. </p>
-							<a href="#portfolio" class="button large scrolly">Take a look at some of my recent work!</a>
-						</div>
-					</div>
-				</div>
-			</article>
-	
-		<!-- Work -->
-			<!-- <article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-						<p>Odio turpis amet sed consequat eget posuere consequat.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-comments"></span>
-								<h3>Consequat lorem</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-camera-retro"></span>
-								<h3>Machine learning - document subject classification</h3>
-								<p>Built software that used machine learning and text processing to classify news articles according to there topics. The performance of two machine learning algorithms, K-NN and Naïve Bayes, where compared. Different text preprocessing methods where also used.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-thumbs-up"></span>
-								<h3>Feugiat posuere</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-					</footer>
-				</div>
-			</article> -->
+    <!-- ====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here are some of my recent cool project!</h2>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Machine%20learning%20-%20document%20subject%20classification">Machine learning - document subject classification</a></h3>
-								<p>Built software that used machine learning and text processing to classify news articles according to there topics. The performance of two machine learning algorithms, K-NN and Naïve Bayes, where compared. Different text preprocessing methods where also used.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Data%20mining%20%E2%80%93%20clustering%20political%20tweets">Data mining – clustering political tweets</a></h3>
-								<p>Collected the tweets of prominent political figures using the twitter API. Then used several unsupervised algorithms for clustering and then compared the usefulness of the results.   Several preprocessing methods where also used to decrease the dimensionality of the data.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/50queen.jpg" alt="" /></a>
-								<h3><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/AI%20%E2%80%93%20Nqueens">AI – N-queens problem</a></h3>
-								<p>The n-queens problem is a problem where you try to place N queens on a NxN chess board such that no queen can attack another queen. In this project we attempted to solve the n-queens problem for large values of N using the min-conflict local search algorithm. We then visualized the solution. </p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/10k.jpg" alt="" /></a>
-								<h3><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Parallel%20programing%20%E2%80%93%20Julia%20sets">Parallel programing – Julia sets</a></h3>
-								<p>Developed a parallel program to generate a Julia set data points, then use the data points to generate a high resolution image. The program was run on the graham supercomputer.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/digits2.jpg" alt="" /></a>
-								<h3><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Image%20processing%20-%20OCR">Image processing – OCR</a></h3>
-								<p>Created an optical character recognition (OCR) software that used K-nearest neighbors’ algorithm (k-nn) and 10000 handwritten digits from the MNIST digit dataset as training data.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/solar.jpg" alt="" /></a>
-								<h3><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Computer%20graphics%20-%20solar%20system%20model">Computer graphics - solar system model </a></h3>
-								<p>Use Three.js library to build a scale model of the solar system in WebGL. This model was intended to be used by a 5th grade teacher and features textured planets and to ability the speed up and slow down the speed of the simulation.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Want to take a closer look at some of the project code? </p>
-						<a href="https://github.com/AmardeepSarang/Amardeep-Portfolio" class="button large scrolly">Here is my Github</a>
-					</footer>
-				</div>
-			</article>
+    <!-- ====== ALL CSS ====== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/57c4c79ee8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <link rel="icon" href="assets/images/icon-logo.png">
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				
-						<div class="col-12">
-							
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								
-								<li><a href="https://www.linkedin.com/in/amardeep-sarang/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio" class="icon brands fa-github"><span class="label">Github</span></a></li>
-	
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy;All rights reserved.</li>
-						</ul>
-					</footer>
-				</div>
-			</article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</head>
 
-	</body>
+<body data-spy="scroll" data-target=".navbar-nav">
+    
+     <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+    <!-- // Preloader -->
+    
+
+    <!-- ====== Header ====== -->
+    <header id="header" class="header">
+        <!-- ====== Navbar ====== -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="assets/images/logo-clear.png" alt="logo">
+                </a>
+                <!-- // Logo -->
+
+                <!-- Mobile Menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"><span><i class="fa fa-bars"></i></span></button>
+                <!-- Mobile Menu -->
+
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ====== // Navbar ====== -->
+    </header>
+    <!-- ====== // Header ====== -->
+
+    <!-- ====== Hero Area ====== -->
+    <div class="hero-aria" id="home">
+        <!-- Hero Area Content -->
+        <div class="container">
+            <div class="hero-content h-100">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <h2 class="text-uppercase title-name">Amardeep Sarang</h2>
+                        <h3 class="text-uppercase"><span class="typed"></span></h3>
+                        <p>Welcome to my portfolio.</p>
+                        <a href="#about" class="button smooth-scroll">Learn More</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Hero Area Content -->
+        <!-- Hero Area Slider -->
+        <div class="hero-area-slids owl-carousel">
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/my-img1-edit.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/my-img2-edit.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+        </div>
+        <!-- // Hero Area Slider -->
+    </div>
+    <!-- ====== //Hero Area ====== -->
+
+    <!-- ====== About Area ====== -->
+    <section id="about" class="section-padding about-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>About Me</h2>
+                        <p>Motivated computer science professional. Passionate in the areas of data science, AI, and cutting-edge tech and software.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-bg" style="background-image:url(assets/images/about-bg.jpg)">
+                        <!-- Social Link -->
+                        <div class="social-aria">
+                            <a target="_blank" href="https://www.linkedin.com/in/amardeep-sarang/"><i class="fab fa-linkedin"></i></a>
+                            <a target="_blank" href="https://twitter.com/Amardee71554964"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/amarsarang98/"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://github.com/AmardeepSarang"><i class="fab
+                                 fa-github"></i></a>
+                        </div>
+                        <!-- // Social Link -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Hello, I am <span>Amardeep Sarang</span></h2>
+                        <h4>Computer Scientist and Software Developer</h4>
+                        <p>I have recently completed my computer science master's degree at the University of Waterloo. I am looking to join the workforce as a computer science professional. During my time at university, I have developed a deep passion for data science and AI. I have taken several courses related to this including intro to artificial intelligence, machine learning, data mining, image processing, and reinforcement learning. In these courses I have worked on several interesting projects including document subject classification, OCR, implementing HDR, and testing object detection models. You can check out these projects and others on my personal website and Github using the links below! </p>
+                        <p>As well as computer science I also keep updated on the latest developments in consumer technology such as the newest smartphones and computer hardware on YouTube. I also like to play video games in my spare time, my favorite genres are management, strategy, and simulation games. I also passionately follow developments in the areas of aerospace, EVs, and autonomous driving technologies.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // About Area ====== -->
+
+    <!-- ====== Fact Counter Section ====== -->
+    <!-- ====================================================================
+            NOTE: You need to change  'data-count="10"' and 'p' Eliments 
+        ===================================================================== -->
+    <section class="section-padding pb-70 bg-img fact-counter" id="counter" style="background-image: url(assets/images/fan-fact-bg.jpg)">
+        <div class="container">
+            <div class="row">
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 co col-md-6 l-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="07">0</span>+</h2>
+                        <p>Years of Programing Experience</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="10">0</span>+</h2>
+                        <p>Programing Languages</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="15">0</span>+</h2>
+                        <p>Project Collaborations</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="10101">0</span>+</h2>
+                        <p>Bugs Squashed</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Fact Counter Section ====== -->
+
+    <!-- ====== Interests Section ====== -->
+    <section id="service" class="section-padding pb-70 service-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Interests</h2>
+                        <p>Here are some of the areas in and outside of computer science that I am most passionate about. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-solid fa-robot"></i>
+                        </div>
+                        <h2>Artificial intelligence</h2>
+                        <p>A.I. is my favorite area of computer science. The ability to use vast amounts of data along with clever algorithms to achieve extraordinary performance in tasks once reserved for humans is incredible!</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-solid fa-shield"></i>
+                        </div>
+                        <h2>Security and policy</h2>
+                        <p>It is an interesting time to be alive when anyone and everyone can almost do or say anything online. I find myself highly interested in the security and ethical issue this new reality brings and thus I'm always interested in the latest developments in security and ethical policy surrounding tech. </p>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-solid fa-palette"></i>
+                        </div>
+                        <h2>UI Design</h2>
+                        <p>Sometimes I like to show off my creative side! Along with more technical aspects, I also have enjoyed the process of designing several aesthetically pleasing websites and apps.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-solid fa-rocket"></i>
+                        </div>
+                        <h2>Aerospace</h2>
+                        <p>Since childhood, I have always been fascinated with planes and rockets. I truly believe that the work being done to support space travel is some of the most inspiring engineering of our time. If I could work in a computer science position related to aerospace it would be a dream come true. </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-solid fa-car"></i>
+                        </div>
+                        <h2>Cars</h2>
+                        <p>Following developments in cars is another hobby of mine. Specifically when it comes to the technological gains made in this area. I'm interested in the efforts made to transform our transportation using EVs and autonomous driving technologies.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-solid fa-mobile"></i>
+                        </div>
+                        <h2>Consumer technology</h2>
+                        <p>I always keep up with the latest advancements in phones, laptops, and other gadgets. I believe that creating technologies that can be used in these types of products that are used by millions is very satisfying and can help inspire, educate, and connect us all. </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+            </div>
+
+        </div>
+    </section>
+    <!-- ====== //Interests Section ====== -->
+
+    <!-- ====== Why choose Me Section ====== -->
+    <section id="skills" class="section-padding why-choose-us pb-70">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Non-Technical Skills</h2>
+                        <p>Here are some of my strongest skills that are useful for any project environment. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-solid fa-user-tie"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Leadership</h4>
+                        <p>I am often the one to take charge and lead my teams by helping to organize roles and encourage an early start on large time-sensitive projects.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-solid fa-comments"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Communication</h4>
+                        <p>Communication is key to any project thus I make sure to set up communication channels for my project team and I am often the one chosen to communicate with external stakeholders to clarify project details. </p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-clock"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Time management</h4>
+                        <p>I sometimes had to deal with several of these projects at once. Despite this, I have a habit of starting projects early. I ensure that a plan is in place for the smooth and timely completion of each project well before the deadline.  I plan to allow work to progress at a steady pace while allowing time to react to unforeseen challenges. </p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-solid fa-users"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Collaboration</h4>
+                        <p>I would normally be the one to suggest how the work should be fairly divided and I like to ensure that the input of my teammates is taken into consideration so that each member of the team feels welcome.  </p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Why choose Me Section ====== -->
+
+    <section class="section-padding pb-70  tech-skills">
+        <div class="container">
+   
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Technical Skills</h2>
+                        <p>I am well experienced in several programing languages. Below is a summary of my technical skills and expertise</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+        <!-- languages Skill Area -->
+        <h2>Programing Language Experience:</h2>
+        <div id="skills" class="skill-area">
+
+            <!-- Single skill -->
+            <div class="single-skill">
+                <div class="skillbar" data-percent="100%">
+                    <div class="skillbar-title">
+                        <span>
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                        Python
+                        </span>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">Expert</div>
+                </div>
+            </div>
+            <!-- //Single skill -->
+
+            <!-- Single skill -->
+            <div class="single-skill">
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        Java</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">Proficient</div>
+                </div>
+            </div>
+            <!-- //Single skill -->
+
+            <!-- Single skill -->
+            <div class="single-skill">
+                <div class="skillbar" data-percent="60%">
+                    <div class="skillbar-title"><span>
+                        <div class="skill-icon">
+                            C
+                        </div>
+                        C/C++</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">Competent</div>
+                </div>
+            </div>
+            <!-- //Single skill -->
+
+            <!-- Single skill -->
+            <div class="single-skill">
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span><div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    SQL</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">Proficient</div>
+                </div>
+            </div>
+            <!-- //Single skill -->
+            <!-- Single skill -->
+            <div class="single-skill">
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        HTML/CSS</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">Proficient</div>
+                </div>
+            </div>
+            <!-- //Single skill -->
+            <!-- Single skill -->
+            <div class="single-skill">
+                <div class="skillbar" data-percent="40%">
+                    <div class="skillbar-title"><span>
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        JS</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">Advanced</div>
+                </div>
+            </div>
+            <!-- //Single skill -->
+        </div>
+        <!-- expertise Skill Area -->
+        <h2>Areas of expertise:</h2>
+
+
+
+        <div class="skill-area expertise-area">
+            <div class="expertise-area">
+                <ul class="expertise-list">
+                    <li>Artificial intelligence</li>
+                    <li>Machine learning</li>
+                    <li>Deep learning </li>
+                    <li>Reinforcement learning</li>
+                    <li>Data mining</li>
+                    <li>Object detection </li>
+                
+                    <li>Image processing</li>
+                    <li>Text processing </li>
+                    <li>Sklearn library</li>
+                    <li>OpenCV library</li>
+                    <li>Website design and development  </li>
+                    <li>Android app design and development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- //Skill Area -->
+
+    <!-- ====== Blog Section ====== -->
+    <section id="projects" class="section-padding pb-70 blog-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Recent Projects</h2>
+                        <p>Here are some of my recent cool projects, feel free to explore my work!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/Autosnow.png)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/AutoSnow-A-synthetic-winter-image-generator-framework">Object Detection and Testing - Generating Synthetic Winter Images</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Python, Numpy, OpenCV, Pytorch, YOLOv5</p>
+                        <p>Created a framework called AutoSnow for generating synthetic winter image data from clear weather datasets. I used these synthetic images to test object detection models trained on clear weather data and compared the performance with real winter data. </p>
+                        <a href="https://github.com/AmardeepSarang/AutoSnow-A-synthetic-winter-image-generator-framework" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/amazon_review.jpg)"></div>
+                        <h4 class="blog-title"><a href="#">Affective text mining - Extracting Aspect-Based Emotions from Online Product Reviews</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Python, Numpy, NLTK, Scapy</p>
+                        <p>Created AAMER, a method for aspect-based emotion analysis of product reviews. AAMER is a rule-based text mining approach to extract customer emotions towards aspects of a product from the product’s reviews on Amazon. The method then displays the emotions toward each aspect in an interpretable manner. </p>
+                        <a href="#" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/hdr.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/HDR-Project">Computer Vision - High-dynamic Range</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Python, Numpy, OpenCV.</p>
+                        <p> Implemented the Debevec-Malik Method of generating high-dynamic range (HDR) composite images from multiple different exposures. </p>
+                        <a href="https://github.com/AmardeepSarang/HDR-Project" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/bold.png)"></div>
+                        <h4 class="blog-title"><a href="https://medium.com/@JetskiJourney/bold-communicate-confidently-38d6e2d2ffd8">HCI - Bold. Communicate Confidently. App Design Project</a></h4>
+                        <p class="blog-meta"><b>Tools Used:</b> Figma, Miro</p>
+                        <p>A project to design and prototype an app to help individuals who lack confidence in public speaking or interview settings. The app was designed to have several features including mock interview practice, instructional modules, user tips, and a forum. The project followed a detailed design process including target user surveys, user interviews, prototype evaluations, and design iteration. </p>
+                        <a href="https://medium.com/@JetskiJourney/bold-communicate-confidently-38d6e2d2ffd8" class="button">View Design Blog</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/exposure\ screenshot.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/Exposure">Exposure Website Project</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> HTML, CSS, MySQL, PHP</p>
+                        <p>Created Exposure, a prototype for an image sharing website targeted at people who enjoy creative and inspiring photography as well as people who have a passion for editing such photos. The website allows and encourages users to edit photos that other users have posted and features a robust web-based editor and ability to download images and reupload it after using your favorite image editor.</p>
+                        <a href="https://github.com/AmardeepSarang/Exposure" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/document_class.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Machine%20learning%20-%20document%20subject%20classification">Document Subject Classification</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Python, Numpy, Sklearn</p>
+                        <p>Built software that used machine learning and text processing to classify news articles according to there topics. The performance of two machine learning algorithms, K-NN and Naïve Bayes, where compared. Different text preprocessing methods where also used.</p>
+                        <a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Machine%20learning%20-%20document%20subject%20classification" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/tweet.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Data%20mining%20%E2%80%93%20clustering%20political%20tweets">Clustering Political Tweets</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Python, Twitter API, Numpy, Sklearn</p>
+                        <p>Collected the tweets of prominent political figures using the twitter API. Then used several unsupervised algorithms for clustering and then compared the usefulness of the results. Several preprocessing methods where also used to decrease the dimensionality of the data.</p>
+                        <a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Data%20mining%20%E2%80%93%20clustering%20political%20tweets" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/50queen.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/AI%20%E2%80%93%20Nqueens">N-queens Problem</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Java, Python, OpenCV</p>
+                        <p>The n-queens problem is a problem where you try to place N queens on a NxN chess board such that no queen can attack another queen. In this project we attempted to solve the n-queens problem for large values of N using the min-conflict local search algorithm. We then visualized the solution.</p>
+                        <a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/AI%20%E2%80%93%20Nqueens" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/julia.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Parallel%20programing%20%E2%80%93%20Julia%20sets">Parallel Programing - Julia Sets</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Message Passing Interface (MPI) using C, Python, Pillow (PIL)</p>
+                        <p> Developed a parallel program to generate a Julia set data points, then use the data points to generate a high resolution image. The program was run on the graham supercomputer.</p>
+                        <a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Parallel%20programing%20%E2%80%93%20Julia%20sets" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/ocr.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Image%20processing%20-%20OCR">Optical Character Recognition</a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> Python, OpenCV</p>
+                        <p>Created an optical character recognition (OCR) software that used K-nearest neighbors' algorithm (k-nn) and 10000 handwritten digits from the MNIST digit dataset as training data.</p>
+                        <a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Image%20processing%20-%20OCR" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/projects/solar.jpg)"></div>
+                        <h4 class="blog-title"><a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Computer%20graphics%20-%20solar%20system%20model">Computer Graphics - Solar System Model </a></h4>
+                        <p class="blog-meta"><b>Languages and Libraries Used:</b> JavaScript, HTML/CSS, Three.js, WebGL</p>
+                        <p>Use Three.js library to build a scale model of the solar system in WebGL. This model was intended to be used by a 5th grade teacher and features textured planets and to ability the speed up and slow down the speed of the simulation.</p>
+                        <a href="https://github.com/AmardeepSarang/Amardeep-Portfolio/tree/master/Computer%20graphics%20-%20solar%20system%20model" class="button">View on Github</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Blog Section ====== -->
+
+    <!-- ====== Call to Action Area ====== -->
+    <section id="contact" class="section-padding call-to-action-aria bg-secondary">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title white-underline text-center">
+                        <h2>Get in Touch</h2>
+                        <p>If any of my skills, projects, or interests have piqued your interest, please considered contacting me. I look forward to hearing from you!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-con">
+                        <ul class="contact-list">
+                            <li><div class="icon-link-contact"><a href="mailto:amar.sarang98@gmail.com"><i class="fa fa-solid fa-envelope"></i></a></div><b>Email:&nbsp </b> <a class="contact-text-link" href="mailto:amar.sarang98@gmail.com">amar.sarang98@gmail.com</a></li>
+                            <li><div class="icon-link-contact"><a href="https://www.linkedin.com/in/amardeep-sarang/"><i class="fa fa-solid fa-linkedin"></i></a></div><b>Linkedin:&nbsp </b> <a class="contact-text-link" href="https://www.linkedin.com/in/amardeep-sarang/">Amardeep Sarang</a></li>
+                            <li><div class="icon-link-contact"><a href="https://github.com/AmardeepSarang"><i class="fa fa-solid fa-github"></i></a></div><b>Github:&nbsp </b> <a class="contact-text-link" href="https://github.com/AmardeepSarang">AmardeepSarang</a></li>
+                            <li><div class="icon-link-contact"><a href="https://twitter.com/amardeep_98"><i class="fa fa-solid fa-twitter"></i></a></div><b>Twitter:&nbsp </b> <a class="contact-text-link" href="https://twitter.com/amardeep_98">@amardeep_98</a></li>
+                            <li><div class="icon-link-contact"><a href="https://www.instagram.com/amarsarang98/"><i class="fa fa-solid fa-instagram"></i></a></div><b>Instagram:&nbsp </b> <a class="contact-text-link" href="https://www.instagram.com/amarsarang98/">amarsarang98</a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="col-lg-6">
+                    <div class="cta-button">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <a href="Resume_Amardeep_sarang.pdf" download="Resume_Amardeep_sarang.pdf" class="button">Download Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Call to Action Area ====== -->
+
+
+
+    <!-- ====== Footer Area ====== -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p class="text-white">This website was made using <a href="https://www.begindot.com/">a Template Designed by Begindot</a></p>
+                        <p class="text-white">Stock images from <a href="https://unsplash.com/"> Unsplash.com</a></p>
+                        <p class="text-white">&copy; 2022 Amardeep Sarang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== // Footer Area ====== -->
+
+
+
+
+
+
+     <!-- ====== ALL JS ====== -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

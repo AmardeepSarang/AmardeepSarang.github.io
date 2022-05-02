@@ -1,34 +1,131 @@
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+(function ($) {
+    "use strict";
 
-(function($) {
+    /*:::::::::::::::::::::::::::::::::::
+            Navbar Area
+    :::::::::::::::::::::::::::::::::::*/
 
-	var	$window = $(window),
-		$body = $('body'),
-		$nav = $('#nav');
+     // Navbar Sticky
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var logo = document.querySelector('.navbar-brand.logo img'); 
+        if (scroll >= 1) {
+            $(".navbar").addClass("bg-primari");
+            logo.setAttribute('src','assets/images/logo.png');
+        } else {
+            $(".navbar").removeClass("bg-primari");
+            logo.setAttribute('src','assets/images/logo-clear.png');
+        }
+    });
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:  [ '1281px',  '1680px' ],
-			large:   [ '981px',   '1280px' ],
-			medium:  [ '737px',   '980px'  ],
-			small:   [ null,      '736px'  ]
-		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+    //Smoth Scroll
+    $(function () {
+        $('.nav-link, .smoth-scroll').on('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 0
+            }, 1000);
+            event.preventDefault();
+        });
+    });
 
-	// Scrolly.
-		$('#nav a, .scrolly').scrolly({
-			speed: 1000,
-			offset: function() { return $nav.height(); }
-		});
+    /*==========================
+        Hero Area Slider
+    ============================*/
 
-})(jQuery);
+    $('.hero-area-slids').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        doots: false,
+        autoplay: true,
+        animateOut: 'fadeOutRight',
+        animateIn: 'fadeIn'
+
+    });
+    //Wow Animation
+    new WOW().init();
+    /*==========================
+        Hero Title typer
+    ============================*/
+    var element = $('.typed');
+
+    $(function () {
+        element.typed({
+            strings: ["Computer Scientist.", "Software Developer.","Designer."],
+            typeSpeed: 100,
+            loop: true,
+            autoplay: true,
+        });
+    });
+
+    /*::::::::::::::::::::::::::::::::::::
+       Portfolio Section
+    ::::::::::::::::::::::::::::::::::::*/
+
+    lightbox.option({
+        'imageFadeDuration': 800,
+        'resizeDuration': 500,
+        'wrapAround': true
+    });
+
+    $('.portfolio-area').mixItUp();
+
+
+    /*::::::::::::::::::::::::::::::::::::
+       Testimonial Section
+    ::::::::::::::::::::::::::::::::::::*/
+
+    $('.testimonials').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        dots: false
+    });
+
+
+    /*::::::::::::::::::::::::::::::::::::
+       Contact Area 
+    ::::::::::::::::::::::::::::::::::::*/
+    var form = $('#contact-form');
+
+    var formMessages = $('.form-message');
+    $(form).submit(function (e) {
+        e.preventDefault();
+        var formData = $(form).serialize();
+        $.ajax({
+                type: 'POST',
+                url: $(form).attr('action'),
+                data: formData
+            })
+            .done(function (response) {
+                $(formMessages).removeClass('error');
+                $(formMessages).addClass('success');
+                $(formMessages).text(response);
+
+                $('#contact-form input,#contact-form textarea').val('');
+            })
+            .fail(function (data) {
+                $(formMessages).removeClass('success');
+                $(formMessages).addClass('error');
+
+                if (data.responseText !== '') {
+                    $(formMessages).text(data.responseText);
+                } else {
+                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                }
+            });
+    });
+    
+    
+    /*::::::::::::::::::::::::::::::::::::
+    Preloader
+    ::::::::::::::::::::::::::::::::::::*/
+    $(window).on('load', function () {
+        $('.preloader').fadeOut();
+    });
+
+}(jQuery));
